@@ -1,0 +1,128 @@
+:root{
+    --dark-blue: #12232E;
+    --soft-pink: #fd91a6;
+    --light-yellow: #f7f739;
+    --lighter-blue: #4DA8DA;
+    --soft-white: #EEFBFB;
+    --dark-purple: #1b1464;
+    /* #fd91a6
+    #f7f739
+    #1b1464
+
+    #12232E
+    #007CC7
+    #4DA8DA */
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: var(--soft-white);
+    /* display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr; */
+}
+
+
+/* ARCH/WEB DESIGN CONTAINER BOX */
+#welcome-section{
+    background-color: var(--soft-pink);
+    position: relative;
+    height: 100vh;
+}
+/* ARCHITECTURE */
+#architecture-box{
+    background-color: var(--soft-pink);
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+}
+.archi-box{
+    clip-path: polygon(0 0%, 100% 0%, 100% 0%, 0% 100%);
+    transition: .8s;
+}
+.archi-box:hover{
+    clip-path: polygon(0 0%, 100% 0%, 100% 50%, 0% 100%);
+    transition: .8s;
+}
+.arch-box{
+    clip-path: polygon(0 0%, 100% 0%, 100% 0%, 0% 50%);
+    transition: .8s;
+}
+#arch-title{
+    position: absolute;
+    font-size: 9rem;
+    color: var(--dark-blue);
+    margin: 24% 0 0 10%;
+    transform: rotate(-26.8deg);
+    transition: .8s;
+    cursor: default;
+}
+/* WEB DESIGN */
+#web-design-box{
+    background-color:  var(--dark-blue);
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+}
+.webdesign-box{
+    clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+    transition: .8s;
+}
+.webdesign-box:hover{
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%);
+    transition: .8s;
+}
+.web-box{
+    clip-path: polygon(0% 100%, 100% 50%, 100% 100%, 0% 100%);
+    transition: .8s;
+}
+#webdesign-title{
+    position: absolute;
+    font-size: 9rem;
+    color: var(--soft-pink);
+    margin: 17.4% 0 0 34.7%;
+    transform: rotate(-26.8deg);
+    transition: 0.8s;
+    cursor: default;
+}
+
+
+
+#webdesign-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-column-gap: 50px;
+    justify-content: center;
+    margin: 50px;
+    opacity: 0;
+    transition: 1s;
+}
+
+#arch-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-column-gap: 50px;
+    justify-content: center;
+    margin: 73vh 50px 50px 50px;
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.wd-projectbox{
+    background-color: var(--soft-white);
+    border: 1px dashed var(--dark-purple);
+    box-shadow: 5px 8px var(--light-yellow);
+    height: 200px;
+    width: 300px;
+}
+
+.arch-projectbox{
+    background-color: var(--soft-white);
+    border: 1px dashed var(--dark-purple);
+    box-shadow: -5px 8px var(--lighter-blue);
+    height: 200px;
+    width: 300px;
+}
